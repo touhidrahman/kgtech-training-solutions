@@ -1,0 +1,23 @@
+<section>
+  <h1>Task 1: Fahrenheit to Celcius</h1>
+
+  <div>18 F = {{ -18 | toCelcius | number }} C</div>
+  <div>0 F = {{ 0 | toCelcius | number }} C</div>
+  <div>10 F = {{ 10 | toCelcius | number }} C</div>
+  <div>21 F = {{ 21 | toCelcius | number }} C</div>
+  <div>30 F = {{ 30 | toCelcius | number }} C</div>
+  <div>37 F = {{ 37 | toCelcius | number }} C</div>
+  <div>100 F = {{ 100 | toCelcius | number }} C</div>
+</section>
+
+<section>
+  <h1>Task 2: Child Component</h1>
+
+  <div>
+    <button (click)="toggleLoading()">
+      {{ loading ? 'Stop' : 'Start' }} Loading
+    </button>
+  </div>
+
+  <app-child [isLoading]="loading"></app-child>
+</section>
